@@ -58,9 +58,9 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Advanced-Topics",
       "pages": [
-        "essentials/markdown",
+        "essentials/CustomToolDevelopment",
         "essentials/code",
         "essentials/images",
         "essentials/settings",
