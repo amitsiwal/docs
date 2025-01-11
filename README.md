@@ -1,32 +1,29 @@
-# Mintlify Starter Kit
+---
+title: Introduction
+---
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+# AgentScript AI: Build AI Agents That Think in Code
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+AgentScript AI is an open-source framework for building re-act AI agents that think and plan using code. Instead of relying on traditional step-by-step orchestration, AgentScript AI prompts LLMs to generate code (a subset of JavaScript) that expresses the agent's plan. This code is then executed in a dedicated runtime, providing resumability, state persistence, and interactivity.
 
-### Development
+## Key Concepts
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+*   **Re-Act Agents:** AgentScript AI is designed for building agents that can reason, plan, and act in a dynamic environment.
+*   **Code Generation:** LLMs generate JavaScript code to express the agent's plan, allowing for complex logic and decision-making.
+*   **AST Runtime:** The generated code is parsed into an Abstract Syntax Tree (AST) and executed in a safe, dedicated runtime, not directly in Node.js.
 
-```
-npm i -g mintlify
-```
+## Why AgentScript AI?
 
-Run the following command at the root of your documentation (where mint.json is)
+Traditional Re-Act agents often involve a back-and-forth between the LLM and tools, leading to large contexts, slow execution, and inflexibility. AgentScript AI addresses these issues by:
 
-```
-mintlify dev
-```
+*   **Abstract Planning:** LLMs can think more abstractly about the task and express the plan as code.
+*   **Flexibility:** The code-based approach allows for loops, conditional logic, and complex data manipulation.
+*   **Efficiency:** Reduced LLM calls and a dedicated runtime lead to faster and more cost-effective execution.
+*   **Resumability:** Execution can be paused, serialized, and resumed later, enabling human-in-the-loop workflows.
 
-### Publishing Changes
+## Installation
 
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+Install AgentScript AI using npm:
 
-#### Troubleshooting
-
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+```bash
+npm install agentscript-ai
